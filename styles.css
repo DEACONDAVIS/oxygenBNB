@@ -20,9 +20,10 @@
 #searchBUT{
     position: fixed;
     top: 20px;
-    left: 760px;
+    left: 770px;
     padding: 5px;
     height: 37px;
+    border-radius: 30px;
     background-color: lightsteelblue;
 }
 #toplink{
@@ -59,5 +60,42 @@
     margin-left: 275px;
     margin-top: 90px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    z-index: -1;
+}
+#senderEmail{
+    width: 300px;
+    font-size: medium;
+    background-color: rgb(255, 255, 96);
+}
+#message{
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    background-color: rgb(255, 255, 96);
+}
+#butt{
+    height: 50px;
+}
+#secretInput{
+    position: relative;
+    top: 500px;
+    width: 300px;
+    background-color: rgb(255, 255, 96);
+}
+#secret{
+    position: relative;
+    top: 525px;
+}
+#secretButt{
+    position: relative;
+    top: 500px;
+    border-radius: 30px;
+    color: red;
+    background-color: red;
+}
+#snackButt{
+    height: 50px;
+    border-radius: 30px;
+    font-size: large;
+    color:ghostwhite;
+    background-color: red;
 }

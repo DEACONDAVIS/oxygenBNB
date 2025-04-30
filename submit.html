@@ -4,6 +4,12 @@
         <title>Oxygen BNB</title>
         <link rel="stylesheet" href="styles.css"/>
         <script src="script.js" defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+        (function() {
+            emailjs.init("qNranmadp3n4wNsln"); 
+        })();
+        </script>
     </head>
     <body>
         <div id="headR">
@@ -23,6 +29,14 @@
 
         <div id="content">
             <h2>Submit Your Ideas</h2>
+            <p>Do you have excellent ideas that you want to contribute to this website? Do you have something you want to share with me, the author?</p>
+            <p>To talk to me the author, send me an email with this form.</p> 
+            <input id="senderEmail" type="text" name="from_email" placeholder="Enter your email address here:"> <br>
+            <input id="message" name="message" type="text" placeholder="Enter your message here:">
+            <button type="button" onclick="submitMessage()" id="butt">send</button>
+            <br>
+            <input id="secretInput" type="text" placeholder="Add your name to bottom of the page"> <button type="button" id="secretButt" onclick="printSecret()">..</button>
+            <p id="secret"></p>
         </div>
     </body>
 </html>
